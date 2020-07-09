@@ -19,6 +19,14 @@ async def multiply(ctx, a: int, b: int):
     await ctx.send(a*b)
 
 @bot.command()
+async def subtract(ctx, a: int, b: int):
+    await ctx.send(a-b)
+
+@bot.command()
+async def divide(ctx, a: int, b: int):
+    await ctx.send(a/b)
+    
+@bot.command()
 async def greet(ctx):
     await ctx.send(":smiley: :wave: Hello, there!")
 
